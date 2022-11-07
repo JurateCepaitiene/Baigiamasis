@@ -1,0 +1,44 @@
+body {
+  background-color: #3edd16;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  text-align: center;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  text-align: center;
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}
+
+modal {
+  color: red;
+}
