@@ -1,9 +1,10 @@
 function set_user_info(first_name, last_name) {
   const base_element = document.createElement("div");
   base_element.id = "user_info";
-  base_element.style.border = "1px solid black";
-  base_element.style.padding = "25px";
-  base_element.style.margin = "25px";
+  base_element.className = "base_element2";
+  // base_element.style.border = "1px solid black";
+  // base_element.style.padding = "25px";
+  // base_element.style.margin = "25px";
 
   const full_name = document.createElement("h2");
   full_name.textContent = first_name + " " + last_name;
@@ -38,9 +39,10 @@ function create_todos_html(data, full_name) {
     if (get.FLName === full_name) {
       const base_element = document.createElement("div");
       base_element.id = "post_id_" + get.id;
-      base_element.style.border = "1px solid red";
-      base_element.style.padding = "50px";
-      base_element.style.margin = "50px";
+      base_element.className = "base_element";
+      // base_element.style.border = "1px solid red";
+      // base_element.style.padding = "50px";
+      // base_element.style.margin = "50px";
 
       const type = document.createElement("h2");
       type.textContent = get.Type;
@@ -57,11 +59,13 @@ function create_todos_html(data, full_name) {
       const edit_button = document.createElement("button");
       edit_button.addEventListener("click", open_edit_modal);
       edit_button.textContent = "Edit";
+      edit_button.className = "btn-news";
       base_element.append(edit_button);
 
       const delete_button = document.createElement("button");
       delete_button.addEventListener("click", delete_todo);
       delete_button.textContent = "Delete";
+      delete_button.className = "btn-news";
       base_element.append(delete_button);
 
       document.querySelector(".todos").append(base_element);
