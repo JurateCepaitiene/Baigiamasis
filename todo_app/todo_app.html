@@ -9,40 +9,49 @@
     <title>To Do App</title>
   </head>
   <body>
-    <div class="todo-border">
-      <h1>To Do App</h1>
-    </div>
-    <div class="user_info"></div>
-    <button class="btn-new" id="add">Add</button>
-
-    <div class="todos"></div>
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form class="todo" action="">
-          <label for="id" id="id_label" style="display: none">ID</label><br />
-          <input
-            type="text"
-            id="id"
-            name="id"
-            style="display: none"
-            disabled
-          /><br />
-          <label for="type">TYPE</label><br />
-          <input type="text" id="type" name="type" /><br />
-          <label for="content">CONTENT</label><br />
-          <input type="text" id="content" name="content" /><br />
-          <label for="end_date">END DATE</label><br />
-          <input type="datetime-local" id="end_date" name="end_date" /><br />
-          <input
-            type="submit"
-            id="modal_button"
-            name="modal_button"
-            value="SAVE"
-          />
-        </form>
+    <main>
+      <div class="todo-border">
+        <h1>To Do App</h1>
       </div>
-    </div>
+      <div class="user_info"></div>
+      <button class="btn-new" id="add">Add</button>
+
+      <div class="todos"></div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form class="todo" action="">
+            <label for="id" id="id_label" style="display: none">ID</label><br />
+            <input
+              type="text"
+              id="id"
+              name="id"
+              style="display: none"
+              disabled
+            /><br />
+            <label for="type">TYPE</label><br />
+            <input type="text" id="type" name="type" /><br />
+            <label for="content">CONTENT</label><br />
+            <input type="text" id="content" name="content" /><br />
+            <label for="end_date">END DATE</label><br />
+            <input type="datetime-local" id="end_date" name="end_date" /><br />
+            <input
+              type="submit"
+              id="modal_button"
+              name="modal_button"
+              value="SAVE"
+            />
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-contents">
+          <ol>
+            <li>Teisės priklauso Juratei, Dainiui, Irenai-Lolitai © 2022</li>
+          </ol>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
